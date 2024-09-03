@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.nav {
+    background-image:linear-gradient(to right,rgb(228, 113, 113),rgb(159, 159, 235));
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.logo {
+    color:rgb(19, 165, 238);
+    font-size:55px;
+    font-weight: 800;
+    margin-left: 3vw;
+}
+.nav-list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+.nav-list a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 17px;
+    width: 70px;
+    height: 28px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-list a:hover {
+    color: rgb(25, 11, 7);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.145);
+}
+marquee {
+    font-size: 18px;
+    height: 30px;
+    border-top:3px solid black ;
+    border-bottom: 3px solid gray;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to left,violet,red);
+}
+.content{
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    z-index: 10;
+}
+.header{
+    position: absolute;
+    margin:3vw 0 0 3vw;
+    font-size:5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 5vw;
+}
+.header .sub-head{
+    font-size: 28px;
+}
+.desc{
+    font-size: 2vw;
+}
+.header button{
+    background-color: transparent;
+    /* all: unset; */
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: 600;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+}
+.header button:hover{
+    background: white;
+    color: rgb(58, 58, 128);
+}
+.boxes {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 38vw;
+    border-radius: 0px 0px 0px 80px;
+    /* border: 1px solid; */
+    background-image: linear-gradient(to top, rgba(255, 0, 0, 0.53), rgba(0, 0, 255, 0.618));
+    z-index: -1;
+}
+.box1, .box2, .box3, .box4, .box5 {
+    /* border: 1px solid; */
+    flex-grow: 1;
+    background: #0000000c;
+}
+
+.box1 {
+    animation: updown1 10s infinite;
+}
+.box2 {
+    animation: updown2 5s infinite;
+}
+.box3 {
+    animation: updown3 10s infinite;
+}
+.box4 {
+    animation: updown4 5s infinite;
+}
+.box5 {
+    animation: updown5 5s infinite;
+}
+
+@keyframes updown1 {
+    0%, 100% {
+        height: 30%;
+    }
+    50% {
+        height: 90%;
+    }
+}
+
+@keyframes updown2 {
+    0%, 100% {
+        height: 20%;
+    }
+    50% {
+        height: 80%;
+    }
+}
+
+@keyframes updown3 {
+    0%, 100% {
+        height: 10%;
+    }
+    50% {
+        height: 70%;
+    }
+}
+
+@keyframes updown4 {
+    0%, 100% {
+        height: 50%;
+    }
+    50% {
+        height: 100%;
+    }
+}
+
+@keyframes updown5 {
+    0%, 100% {
+        height: 40%;
+    }
+    50% {
+        height: 60%;
+    }
+}
+
+.homeinfo{
+    /* border: 1px solid; */
+    margin-top: 5vw;
+    border-radius: 50px 0px 50px 0px;
+   
+}
+.info1 ,.info2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info1 img,.info2 img{
+    height: 30vw;
+    width: 30vw;
+    /* background: #000; */
+    /* border: 1px solid; */
+}
+.para{
+    font-size: 4vw;
+    /* gap: 2vw; */
+    /* line-height: 3vw; */
+    padding: 20px;
+    width: 60%;
+    color: rgb(124, 112, 112);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 3.5vw;
+    border-radius: 20px;
+
+}
+.footer{
+    background-image: linear-gradient(to bottom,rgb(244, 241, 241),rgba(0, 0, 0, 0.399));
+    padding:25px 0px 20px;
+    /* border-top: 5px solid gray; */
+    border-radius:20px 20px 0px 0px;
+}
+.query{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.query input{
+    height: 25px;
+    width: 400px;
+    margin-top: 10px;
+    padding: 5px;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.query button{
+    height: 35px;
+    width: 100px;
+    font-size: 16px;
+    border: 1px solid white;
+    background: black;
+    color: white;
+    border-radius: 20px;
+}
+.query button:hover{
+    background: white;
+    color: blue;
+    font-weight: 600;
+    border-color:gray ;
+}
+.footer-list{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+
+}
+.footer-list .list{
+    font-size: 19px;
+    color: rgb(31, 27, 27);
+}
+.footer-head{
+    font-size: 22px;
+    color: black;
+    border-bottom: 2px solid gray;
+}
