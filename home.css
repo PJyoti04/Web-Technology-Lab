@@ -67,19 +67,21 @@ marquee {
     font-size: 2vw;
 }
 .header button{
-    background-color: transparent;
+    background-color: white;
     /* all: unset; */
     font-size: 20px;
-    color: whitesmoke;
+    /* color: whitesmoke; */
     font-weight: 600;
+    color: rgb(7, 7, 81);
     border: 1px solid white;
     border-radius: 10px;
     width: 150px;
     height: 50px;
 }
 .header button:hover{
-    background: white;
-    color: rgb(58, 58, 128);
+    background: transparent;
+    /* color: rgb(58, 58, 128); */
+    color: whitesmoke;
 }
 .boxes {
     display: flex;
@@ -202,10 +204,13 @@ marquee {
     height: 25px;
     width: 400px;
     margin-top: 10px;
-    padding: 5px;
+    padding: 5px 0px 5px 8px;
     outline: none;
     border: 2px solid white;
     border-radius: 20px;
+    border: 1px solid black;
+    font-size: 17px;
+    font-weight: 700;
 }
 .query button{
     height: 35px;
@@ -228,12 +233,18 @@ marquee {
     padding-top: 10px;
 
 }
-.footer-list .list{
-    font-size: 19px;
+.footer-list .footer-link{
+    font-size: 16px;
     color: rgb(31, 27, 27);
+}
+.footer-list .footer-link:hover{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
 }
 .footer-head{
     font-size: 22px;
     color: black;
     border-bottom: 2px solid gray;
+    text-decoration: none;
 }
