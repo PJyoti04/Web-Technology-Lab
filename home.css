@@ -31,12 +31,37 @@
     width: 70px;
     height: 28px;
     text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .nav-list a:hover {
     color: rgb(25, 11, 7);
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.145);
+}
+.entry{
+    color: white;
+    height: 40px;
+    font-size: 17px;
+    border: 2px solid white;
+    display: flex;
+    border-radius: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#login,#register{
+    background: #f47439fb;
+    width: 90px;
+    height: inherit;
+    display: grid;
+    place-items:center;
+    border-radius:18px;
+}
+#register{
+    background: transparent;
+}
+#register:hover{
+    background: #f47439fb;
 }
 marquee {
     font-size: 18px;
