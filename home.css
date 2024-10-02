@@ -39,7 +39,7 @@
     background: rgba(255, 255, 255, 0.145);
 }
 .entry{
-    color: white;
+    /* color: white; */
     height: 40px;
     font-size: 17px;
     border: 2px solid white;
@@ -47,9 +47,10 @@
     border-radius: 20px;
     margin-right: 20px;
     cursor: pointer;
+    /* background: #000; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-#login,#register{
+#login{
     background: #f47439fb;
     width: 90px;
     height: inherit;
@@ -59,9 +60,11 @@
 }
 #register{
     background: transparent;
-}
-#register:hover{
-    background: #f47439fb;
+    width: 90px;
+    height: inherit;
+    display: grid;
+    place-items:center;
+    border-radius:18px;
 }
 marquee {
     font-size: 18px;

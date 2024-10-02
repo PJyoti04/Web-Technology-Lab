@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+        /* display: grid;
+        grid-template-columns: auto auto auto; */
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .card {
+        width: 300px;
+        height: 340px;
+        border-radius: 20px;
+        margin: 20px;
+        background: url(images/3d-rendering-cartoon-like-boy_23-2150797566.png);
+        background-size: contain;
+        display: flex;
+        align-items: flex-end;
+        cursor: pointer;
+        box-shadow: 0px 8px 20px gray;
+        overflow: hidden;
+        position: relative;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+      }
+      .card:hover {
+        opacity: 0.9;
+        transform: translateY(-5px);
+      }
+
+      .card:hover .details {
+        height: 150px;
+      }
+
+      .card .details {
+        height: 100px;
+        width: 100%;
+        border-radius: 30px 0px 20px 20px;
+        background: #ffffff;
+        padding: 10px;
+        transition: height 0.5s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .details .content {
+        flex-grow: 1;
+        overflow: hidden;
+      }
+
+      .details h2 {
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        word-wrap: break-word;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+        overflow: hidden;
+        display: -webkit-box;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        line-height: 1.5em;
+      }
+
+      .details .action {
+        padding-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .details button {
+        width: 110px;
+        height: 30px;
+        background: #b1aaaa51;
+        border-radius: 10px;
+        font-weight: 600;
+        box-shadow: inset 0px 2px 3px gray;
+        border: none;
+        cursor: pointer;
+      }
+      .details button:hover{
+        background: #b1aaaa78;
+        box-shadow: inset 0px 2px 5px rgb(157, 151, 151);
+      }
+
+      .wish,.likes,.comment{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 2px;
+      }
+      .wish{
+        width: 40%;
+      }
+      #like{
+        width: 22px;
+        padding-right: 3px;
+      }
+      #comment{
+        width: 20px;
+        padding-right: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="details">
+        <div class="content">
+          <h2>
+            Read this blog about how to be successful in
+            life gh ghhgh hhyh hjjj jjujk hjjbhhhjjjjjjjjj jdjkkf jkkdkkd kdkkdkmmdkdkkd
+          </h2>
+          <p>Hello everyone  welcome to my utube channel Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate explicabo autem adipisci non tenetur modi corrupti velit fugit ex atque.</p>
+        </div>
+        <div class="action">
+            <div class="wish">
+                <div class="likes">
+                    <img id="comment" src="images/icons8-chat-message-50.png" alt="comment">
+                    100
+                </div>
+                <div class="comment">
+                    <img id="like" src="images/icons8-like-48.png" alt="like">
+                    200    
+                </div>
+            </div>
+          <button>More Details</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+        <div class="details">
+          <div class="content">
+            <h2>
+              Read this blog about how to be successful in
+              life gh ghhgh hhyh hjjj jjujk hjjbhhhjjjjjjjjj jdjkkf jkkdkkd kdkkdkmmdkdkkd
+            </h2>
+            <p>Hello everyone  welcome to my utube channel Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate explicabo autem adipisci non tenetur modi corrupti velit fugit ex atque.</p>
+          </div>
+          <div class="action">
+              <div class="wish">
+                  <div class="likes">
+                      <img id="comment" src="images/icons8-chat-message-50.png" alt="comment">
+                      100
+                  </div>
+                  <div class="comment">
+                      <img id="like" src="images/icons8-like-48.png" alt="like">
+                      200    
+                  </div>
+              </div>
+            <button>More Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="details">
+          <div class="content">
+            <h2>
+              Read this blog about how to be successful in
+              life gh ghhgh hhyh hjjj jjujk hjjbhhhjjjjjjjjj jdjkkf jkkdkkd kdkkdkmmdkdkkd
+            </h2>
+            <p>Hello everyone  welcome to my utube channel Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate explicabo autem adipisci non tenetur modi corrupti velit fugit ex atque.</p>
+          </div>
+          <div class="action">
+              <div class="wish">
+                  <div class="likes">
+                      <img id="comment" src="images/icons8-chat-message-50.png" alt="comment">
+                      100
+                  </div>
+                  <div class="comment">
+                      <img id="like" src="images/icons8-like-48.png" alt="like">
+                      200    
+                  </div>
+              </div>
+            <button>More Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="details">
+          <div class="content">
+            <h2>
+              Read this blog about how to be successful in
+              life gh ghhgh hhyh hjjj jjujk hjjbhhhjjjjjjjjj jdjkkf jkkdkkd kdkkdkmmdkdkkd
+            </h2>
+            <p>Hello everyone  welcome to my utube channel Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate explicabo autem adipisci non tenetur modi corrupti velit fugit ex atque.</p>
+          </div>
+          <div class="action">
+              <div class="wish">
+                  <div class="likes">
+                      <img id="comment" src="images/icons8-chat-message-50.png" alt="comment">
+                      100
+                  </div>
+                  <div class="comment">
+                      <img id="like" src="images/icons8-like-48.png" alt="like">
+                      200    
+                  </div>
+              </div>
+            <button>More Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="details">
+          <div class="content">
+            <h2>
+              Read this blog about how to be successful in
+              life gh ghhgh hhyh hjjj jjujk hjjbhhhjjjjjjjjj jdjkkf jkkdkkd kdkkdkmmdkdkkd
+            </h2>
+            <p>Hello everyone  welcome to my utube channel Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate explicabo autem adipisci non tenetur modi corrupti velit fugit ex atque.</p>
+          </div>
+          <div class="action">
+              <div class="wish">
+                  <div class="likes">
+                      <img id="comment" src="images/icons8-chat-message-50.png" alt="comment">
+                      100
+                  </div>
+                  <div class="comment">
+                      <img id="like" src="images/icons8-like-48.png" alt="like">
+                      200    
+                  </div>
+              </div>
+            <button>More Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="details">
+          <div class="content">
+            <h2>
+              Read this blog about how to be successful in
+              life gh ghhgh hhyh hjjj jjujk hjjbhhhjjjjjjjjj jdjkkf jkkdkkd kdkkdkmmdkdkkd
+            </h2>
+            <p>Hello everyone  welcome to my utube channel Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate explicabo autem adipisci non tenetur modi corrupti velit fugit ex atque.</p>
+          </div>
+          <div class="action">
+              <div class="wish">
+                  <div class="likes">
+                      <img id="comment" src="images/icons8-chat-message-50.png" alt="comment">
+                      100
+                  </div>
+                  <div class="comment">
+                      <img id="like" src="images/icons8-like-48.png" alt="like">
+                      200    
+                  </div>
+              </div>
+            <button>More Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="details">
+          <div class="content">
+            <h2>
+              Read this blog about how to be successful in
+              life gh ghhgh hhyh hjjj jjujk hjjbhhhjjjjjjjjj jdjkkf jkkdkkd kdkkdkmmdkdkkd
+            </h2>
+            <p>Hello everyone  welcome to my utube channel Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate explicabo autem adipisci non tenetur modi corrupti velit fugit ex atque.</p>
+          </div>
+          <div class="action">
+              <div class="wish">
+                  <div class="likes">
+                      <img id="comment" src="images/icons8-chat-message-50.png" alt="comment">
+                      100
+                  </div>
+                  <div class="comment">
+                      <img id="like" src="images/icons8-like-48.png" alt="like">
+                      200    
+                  </div>
+              </div>
+            <button>More Details</button>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
