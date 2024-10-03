@@ -11,12 +11,12 @@
         box-sizing: border-box;
       }
       body{
-        /* display: grid;
-        grid-template-columns: auto auto auto; */
-        display: flex;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        /* display: flex; */
         /* flex-direction: column; */
-        flex-wrap: wrap;
-        justify-content: space-around;
+        /* flex-wrap: wrap; */
+        /* justify-content: space-around; */
       }
       .card {
         width: 300px;
@@ -96,7 +96,7 @@
         box-shadow: inset 0px 2px 5px rgb(157, 151, 151);
       }
 
-      .wish,.likes,.comment{
+      .wish,.response{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -105,42 +105,23 @@
       .wish{
         width: 40%;
       }
-      #like{
+      .like{
         width: 22px;
         padding-right: 3px;
       }
-      #comment{
+      .liked{
+        display: none;
+        padding-right: 3px;
+      }
+      .comment{
         width: 20px;
         padding-right: 3px;
       }
     </style>
   </head>
   <body>
-    <div class="card">
-      <div class="details">
-        <div class="content">
-          <h2>
-            Read this blog about how to be successful in
-            life gh ghhgh hhyh hjjj jjujk hjjbhhhjjjjjjjjj jdjkkf jkkdkkd kdkkdkmmdkdkkd
-          </h2>
-          <p>Hello everyone  welcome to my utube channel Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate explicabo autem adipisci non tenetur modi corrupti velit fugit ex atque.</p>
-        </div>
-        <div class="action">
-            <div class="wish">
-                <div class="likes">
-                    <img id="comment" src="images/icons8-chat-message-50.png" alt="comment">
-                    100
-                </div>
-                <div class="comment">
-                    <img id="like" src="images/icons8-like-48.png" alt="like">
-                    200    
-                </div>
-            </div>
-          <button>More Details</button>
-        </div>
-      </div>
-    </div>
-    <div class="card">
+        
+    <div class="card" style="background: url(images/fun-3d-cartoon-teenage-girl_183364-81040.png);background-size: contain;">
         <div class="details">
           <div class="content">
             <h2>
@@ -151,19 +132,21 @@
           </div>
           <div class="action">
               <div class="wish">
-                  <div class="likes">
-                      <img id="comment" src="images/icons8-chat-message-50.png" alt="comment">
+                  <div class="response">
+                      <img class="comment" src="images/icons8-chat-message-50.png" alt="comment">
                       100
                   </div>
-                  <div class="comment">
-                      <img id="like" src="images/icons8-like-48.png" alt="like">
-                      200    
+                  <div class="response">
+                      <img class="like" src="images/icons8-like-48.png" alt="like">
+                      <img class="liked" style="height: 18px;" src="images/icons8-like-color-32.png" alt="liked">
+                      <div class="num">200</div>    
                   </div>
               </div>
             <button>More Details</button>
           </div>
         </div>
       </div>
+
       <div class="card">
         <div class="details">
           <div class="content">
@@ -175,109 +158,14 @@
           </div>
           <div class="action">
               <div class="wish">
-                  <div class="likes">
-                      <img id="comment" src="images/icons8-chat-message-50.png" alt="comment">
+                  <div class="response">
+                      <img class="comment" src="images/icons8-chat-message-50.png" alt="comment">
                       100
                   </div>
-                  <div class="comment">
-                      <img id="like" src="images/icons8-like-48.png" alt="like">
-                      200    
-                  </div>
-              </div>
-            <button>More Details</button>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="details">
-          <div class="content">
-            <h2>
-              Read this blog about how to be successful in
-              life gh ghhgh hhyh hjjj jjujk hjjbhhhjjjjjjjjj jdjkkf jkkdkkd kdkkdkmmdkdkkd
-            </h2>
-            <p>Hello everyone  welcome to my utube channel Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate explicabo autem adipisci non tenetur modi corrupti velit fugit ex atque.</p>
-          </div>
-          <div class="action">
-              <div class="wish">
-                  <div class="likes">
-                      <img id="comment" src="images/icons8-chat-message-50.png" alt="comment">
-                      100
-                  </div>
-                  <div class="comment">
-                      <img id="like" src="images/icons8-like-48.png" alt="like">
-                      200    
-                  </div>
-              </div>
-            <button>More Details</button>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="details">
-          <div class="content">
-            <h2>
-              Read this blog about how to be successful in
-              life gh ghhgh hhyh hjjj jjujk hjjbhhhjjjjjjjjj jdjkkf jkkdkkd kdkkdkmmdkdkkd
-            </h2>
-            <p>Hello everyone  welcome to my utube channel Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate explicabo autem adipisci non tenetur modi corrupti velit fugit ex atque.</p>
-          </div>
-          <div class="action">
-              <div class="wish">
-                  <div class="likes">
-                      <img id="comment" src="images/icons8-chat-message-50.png" alt="comment">
-                      100
-                  </div>
-                  <div class="comment">
-                      <img id="like" src="images/icons8-like-48.png" alt="like">
-                      200    
-                  </div>
-              </div>
-            <button>More Details</button>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="details">
-          <div class="content">
-            <h2>
-              Read this blog about how to be successful in
-              life gh ghhgh hhyh hjjj jjujk hjjbhhhjjjjjjjjj jdjkkf jkkdkkd kdkkdkmmdkdkkd
-            </h2>
-            <p>Hello everyone  welcome to my utube channel Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate explicabo autem adipisci non tenetur modi corrupti velit fugit ex atque.</p>
-          </div>
-          <div class="action">
-              <div class="wish">
-                  <div class="likes">
-                      <img id="comment" src="images/icons8-chat-message-50.png" alt="comment">
-                      100
-                  </div>
-                  <div class="comment">
-                      <img id="like" src="images/icons8-like-48.png" alt="like">
-                      200    
-                  </div>
-              </div>
-            <button>More Details</button>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="details">
-          <div class="content">
-            <h2>
-              Read this blog about how to be successful in
-              life gh ghhgh hhyh hjjj jjujk hjjbhhhjjjjjjjjj jdjkkf jkkdkkd kdkkdkmmdkdkkd
-            </h2>
-            <p>Hello everyone  welcome to my utube channel Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate explicabo autem adipisci non tenetur modi corrupti velit fugit ex atque.</p>
-          </div>
-          <div class="action">
-              <div class="wish">
-                  <div class="likes">
-                      <img id="comment" src="images/icons8-chat-message-50.png" alt="comment">
-                      100
-                  </div>
-                  <div class="comment">
-                      <img id="like" src="images/icons8-like-48.png" alt="like">
-                      200    
+                  <div class="response">
+                      <img class="like" src="images/icons8-like-48.png" alt="like">
+                      <img class="liked" style="height: 18px;" src="images/icons8-like-color-32.png" alt="liked">
+                      <div class="num">200</div>    
                   </div>
               </div>
             <button>More Details</button>
@@ -285,4 +173,23 @@
         </div>
       </div>
   </body>
+  <script>
+  const likeButtons = document.querySelectorAll(".like");
+  const likedButtons = document.querySelectorAll(".liked");
+
+  likeButtons.forEach((likeButton, index) => {
+    likeButton.addEventListener("click", () => {
+      likeButton.style.display = "none"; 
+      likedButtons[index].style.display = "block"; 
+    });
+  });
+
+  likedButtons.forEach((likedButton, index) => {
+    likedButton.addEventListener("click", () => {
+      likedButton.style.display = "none"; 
+      likeButtons[index].style.display = "block";
+    });
+  });
+</script>
+
 </html>
