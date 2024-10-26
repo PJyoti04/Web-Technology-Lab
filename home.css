@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+/* html{
+    scroll-behavior: smooth;
+} */
 .nav {
     background-image:linear-gradient(to bottom,rgb(82, 95, 239),rgb(93, 93, 253));
     height: 80px;
@@ -93,10 +96,11 @@
 
 .header .head_cv{
     margin-left: 30px;
-    font-size: 27vw;
+    font-size: 30vw;
     /* transform: translateX(-10%); */
     display: inline-block;
     white-space: nowrap;
+    /* transform: translateZ(0); */
 }
 .header .sub-head{
     font-size: 28px;
@@ -206,9 +210,11 @@
    
 }
 .info1 ,.info2{
+    /* border: 1px solid; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow-x: hidden;
 }
 .info1 img,.info2 img{
     height: 30vw;
@@ -226,6 +232,7 @@
     font-family: Arial, Helvetica, sans-serif;
     line-height: 3.5vw;
     border-radius: 20px;
+    
 
 }
 .footer{

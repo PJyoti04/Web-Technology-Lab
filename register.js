@@ -31,6 +31,13 @@ t1.from(".nav",{
 })
 
 
+t1.from(".content",{
+  x : 1000,
+  opacity : 0,
+  duration : 1,
+})
+
+
 t1.from(".nav > *",{
   y : -100,
   opacity : 0,
@@ -65,30 +72,70 @@ t1.from(".nav-list a",{
 //   duration : 1,
 // })
 
-t1.from(".content",{
+
+
+t1.from(".content .header",{
   x : 1000,
   opacity : 0,
-  duration : 1,
+  duration : 1.5,
 })
 
-// t1.from(".content .header",{
-//   x : 500,
-//   opacity : 0,
-//   duration : 1.5,
-// })
-
 gsap.to(".header .head_cv",{
-  transform:"translateX(-150%)",
+  transform:"translateX(-80%)",
   // x: "100vw",
-  duration : 2,
+  duration : 5,
   // opacity : 1,
   scrollTrigger : {
     trigger : ".content",
-    scroller : "body",
+    // scroller : "body",
     pin : true,
     // markers : true,
-    scrub : 1,
+    scrub : 2,
     start : "top 10%",
-    end :"top -120%",
+    end :"top -80%",
+  }
+})
+
+gsap.from(".info1 img",{
+  x : -100,
+  opacity : 0,
+  duration : 2,
+  scrollTrigger : {
+    trigger:".info1",
+    start : "top 60%",
+    // markers : true,
+  }
+})
+
+gsap.from(".info1 .para",{
+  x : 100,
+  opacity : 0,
+  duration : 2,
+  scrollTrigger : {
+    trigger:".info1",
+    start : "top 60%",
+    // markers : true,
+  }
+})
+
+gsap.from(".info2 img",{
+  x : -100,
+  opacity : 0,
+  duration : 2,
+  scrollTrigger : {
+    trigger:".info2",
+    start : "top 60%",
+    // markers : true,
+  }
+})
+
+gsap.from(".info2 .para",{
+  x : 100,
+  opacity : 0,
+  duration : 2,
+  scrollTrigger : {
+    trigger:".info2",
+    start : "top 60%",
+    // markers : true,
   }
 })
